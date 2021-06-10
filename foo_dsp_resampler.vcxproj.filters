@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dsp_config.cpp" />
+    <ClCompile Include="foo_dsp_rate.cpp" />
+    <ClCompile Include="foo_dsp_resampler.cpp" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="PCH.cpp" />
+    <ClCompile Include="lpc\lpc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="chain.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="dsp_config.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="foo_dsp_rate.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="new_exception.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="rate\ratelib.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="lpc\lpc.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="foo_dsp_resampler.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{19b0ea18-27ff-4a2a-8ec1-eaf111dc6e88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

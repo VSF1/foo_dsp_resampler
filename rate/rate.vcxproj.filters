@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="fft-float">
+      <UniqueIdentifier>{9308e266-386b-450e-b0cb-8f8a3af50336}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fft-double">
+      <UniqueIdentifier>{efe69763-2fa3-4b81-b605-07364cc0f9f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{1faab949-b2d5-4f8e-912b-7028b49d345d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fft-float\fft.c">
+      <Filter>fft-float</Filter>
+    </ClCompile>
+    <ClCompile Include="fft-float\rdft.c">
+      <Filter>fft-float</Filter>
+    </ClCompile>
+    <ClCompile Include="fft-double\fft4g_dbl.c">
+      <Filter>fft-double</Filter>
+    </ClCompile>
+    <ClCompile Include="fft-double\fft4g_sse3.c">
+      <Filter>fft-double</Filter>
+    </ClCompile>
+    <ClCompile Include="effects_i_dsp.c" />
+    <ClCompile Include="rate_uni.c" />
+    <ClCompile Include="xmalloc.c" />
+    <ClCompile Include="rate_double.c" />
+    <ClCompile Include="rate_SSE3.c" />
+    <ClCompile Include="rate_float.c" />
+    <ClCompile Include="rate_SSE.c" />
+    <ClCompile Include="fft-float\rdft_sse.c">
+      <Filter>fft-float</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fft-float\fft_ffmpeg.h">
+      <Filter>fft-float</Filter>
+    </ClInclude>
+    <ClInclude Include="fft-float\ffti.h">
+      <Filter>fft-float</Filter>
+    </ClInclude>
+    <ClInclude Include="fft-double\fft4g.h">
+      <Filter>fft-double</Filter>
+    </ClInclude>
+    <ClInclude Include="fifo.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="rate_i.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ratelib.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="sox.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="sox_i.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="xmalloc.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="prepare_coefs.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="dft_filter.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="rate_base.h" />
+    <ClInclude Include="rate_filters_generic.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="rate_filters_SSE.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="rate_filters_SSE3.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="fft-float\fft_asm.asm">
+      <Filter>fft-float</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
